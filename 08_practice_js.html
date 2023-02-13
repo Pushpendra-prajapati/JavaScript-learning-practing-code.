@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Swapping using temporary variable.
+        let a = prompt("Enter the A value");
+        let b = prompt("Enter the B value");
+        console.log(`The value of A is : ${a} \n The value of B is : ${b}`);
+        let temp;
+        temp = a;
+        a = b;
+        b = temp;
+        console.log(`After Swapping \nThe value of A is : ${a} \n The value of B is : ${b}`);
+        
+        //Swapping without using temporary variable.
+        let x = parseFloat(prompt("Enter x value"));
+        let y = parseFloat(prompt("Enter y value"));
+        console.log(` X is : ${x} \n Y is : ${y}`);
+        x = x+y;
+        y = x-y;
+        x = x-y;
+        console.log(`After Swapping \n X is : ${x} \n Y is : ${y}`);
+    </script>
+</body>
+</html>

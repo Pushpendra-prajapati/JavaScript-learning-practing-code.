@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* To find the area of regular triangle ?
+           General formula : s = (a+b+c)/2
+           Area = √s*(s-a)*(s-b)*(s-c) */
+    
+        let a = prompt("Enter A value");
+        let b = prompt("Enter B value");
+        let c = prompt("Enter C value");
+
+        document.write("A = " + a + "<br/>");
+        document.write("B = " + b + "<br/>");
+        document.write("C = " + c + "<br/><br/><br/>");
+        
+        let s = (a+b+c)/2;
+        let temp = s*(s-a)*(s-b)*(s-c);
+        let area = Math.sqrt(temp);
+
+        document.write(`Area : ${area}`);
+    </script>
+    
+</body>
+</html>

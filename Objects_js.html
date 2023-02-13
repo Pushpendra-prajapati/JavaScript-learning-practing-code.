@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        // Object literals...
+        // var person = {
+        //     name:"Pushpendra",
+        //     city:"Khajuraho",
+        //     country:"India"
+        // };
+
+        // document.write(person.name +"<br/>");
+        // document.write(person.city);
+
+        // var names = person.name;
+        // console.log(names);
+
+        // var citys = person.city;
+        // console.log(citys);
+
+        // let x = person['name'];
+        // document.write(x);
+        // let y = person.city;
+        // console.log(y);
+        // console.log(person['country']);
+
+        // var list = {
+        //     lesson:"1",
+        //     course:"JavaScript",
+        //     topic:"objects",
+        //     teacher:"sololearn community",
+        //     join:"10 jan"
+        // }
+
+        // console.log(list.lesson);  //or
+        // console.log(list['lesson']);
+
+        // console.log(list.course);
+        // let x = list['topic'];
+        // console.log(x);
+        // let y = list.teacher;
+        // console.log(y);
+
+        // console.log(list.course.length);
+        // document.write(list.teacher.length);
+
+        //Object constructor... 
+        
+        // var friend = {
+        //     name:"Pushpendra prajapati",
+        //     age:19,
+        //     study:"BA",
+        //     status:"true"
+        // };
+
+        function friend(name,age,study,status){
+            this.name = name;
+            this.age = age;
+            this.study = study;
+            this.status = status;
+        }
+        var object1 = new friend("Ravi", 21, "NEET", 0)
+        var object2 = new friend("Rambabu", "20years", "BA", 1);
+        var object3 = new friend("Dinesh", 18, "BA", 1);
+        var object4 = new friend("Rohan", 17, "NEET",0);
+
+        // console.log(object1.name);
+        // console.log(object1.status);
+
+        // document.write(object3.status + "<br/>")
+        // document.write("Hi,there! " + object3.name);
+
+        // document.write(object4.study);
+        // document.write(object2.age);
+
+        // var pushpendra = { name:"pushpendra", age:19 };
+        // document.write(pushpendra.age);
+       
+        // function person(name, age){
+        //     this.fullName = name;
+        //     this.age = age;
+        //     this.changeName = function(name){
+        //         this.fullName = name;
+        //     }
+        // }
+
+        // var obj_one = new person("Pushpendra Prajapati", 19);
+        // var obj_two = new person("Rohandas Ahirwar",18);
+
+        // obj_two.changeName("Rambabu Ahirwar");
+
+        // document.write(obj_one.fullName);
+        // document.write(obj_two.fullName);
+        
+        // document.write(obj_two.fullName)
+
+
+        function person(name, age,city){
+            this.fullName = name;
+            this.age = age;
+            this.city = city;
+            this.yearofBirth = bornYear;
+        }
+        
+        function bornYear(){
+            return 2023 - this.age;
+        }
+
+        var p = new person("A", 19, "Bhopal");
+        document.write(p.yearofBirth())
+    </script>
+</body>
+</html>

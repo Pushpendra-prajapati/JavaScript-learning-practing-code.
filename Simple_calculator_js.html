@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple_calculator</title>
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+        h1 {
+            text-align: center;
+            color:white;
+            border:1px solid lightgrey;
+            align-items: center;
+            width:400px;
+            padding:4px 1px;
+            border-radius:35px;
+            margin:70px;
+            background-color:cornflowerblue;
+        }
+        input {
+            text-align: center;
+            height:40px;
+            border-radius:20px;
+            border:none;
+            box-sizing: border-box;
+            margin:0px 40px;
+        }
+        #operator {
+            font-size:23px;
+            height:40px;
+            width:70px;
+            text-align: center;
+            border-radius:10px;
+            border:none;
+            
+        }
+        button {
+            margin-left:80px;
+            padding:13px 50px;
+            font-weight:bold;
+            color:blueviolet;
+            background-color: lightblue;
+            border:none;
+            border-radius:20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Calulator</h1>
+    <br><br>
+    <hr>
+    <br><br><br>
+    <input type="number" name="first" id="first" step="any" placeholder="Enter Number">
+    <select  id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">x</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="number" name="second" id="second" step="any" placeholder="Enter Number"/><br><br><br>
+    <button onclick="calculate()">Calculate</button>
+    <input type="text" id="result" readonly placeholder="Answer" step="any"><br><br><br><br><br>
+
+    <hr>
+    <br><br><br><br><br>
+    <h2 style="text-align:center;color:white;"><b>Author : Pushpendra Prajapati</b></h2>
+    <br><br><br><br><br><br><br><br><br><br>
+
+    
+    <script>
+        function calculate(){
+            var oprand_one = document.getElementById('first').value;
+            var oprand_two = document.getElementById('second').value;
+            var operator = document.getElementById('operator').value;
+            
+            if(operator=="+"){
+                var answer = parseFloat(oprand_one) + parseFloat(oprand_two);
+            }
+            if(operator=="-"){
+                var answer = parseFloat(oprand_one)  - parseFloat(oprand_two);
+            }
+            if(operator=="*"){
+                var answer = parseFloat(oprand_one) * parseFloat(oprand_two);
+            }
+            if(operator=="/"){
+                var answer = parseFloat(oprand_one) / parseFloat(oprand_two);
+            }
+            if(operator=="%"){
+                var answer = parseFloat(oprand_one) % parseFloat(oprand_two);
+            }
+           document.getElementById('result').value = answer;
+        }
+    </script>
+</body>
+</html>

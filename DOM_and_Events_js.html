@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <div class="myclass">
+        <p>my first portfolio web</p> 
+        <p>my first </p> 
+        <p>codepushpendra.com</p> 
+    </div>
+    
+    <script>
+        //document.body.innerHTML = "some text";
+       // document.getElementById("demo").innerHTML = "this is selecting elemnets text";
+        
+        // var ele = document.getElementById("demo").innerHTML = "selecting element";
+        // document.write(ele);
+
+       //var myclass = document.getElementsByClassName("myclass").innerHTML = "pushpendra prajapati";
+       //document.write(myclass);
+
+       var arr = document.getElementsByTagName("p");
+       for(var x = 0; x<arr.length; x++) {
+        arr[x].innerHTML = "Pushpendra prajapati";
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        <p id="p1">This is a paragraph</p>
+        <p id="p2">This is another paragraph</p>
+        <p id="p3"></p>
+    </div>
+
+    <script>
+        let p = document.createElement("p");
+        let node = document.createTextNode("This is new paragraph");
+        p.appendChild(node);
+
+        let parent = document.getElementById("demo");
+        let child = document.getElementById("p3");
+        parent.replaceChild(p, child);
+    </script>
+</body>
+</html>
