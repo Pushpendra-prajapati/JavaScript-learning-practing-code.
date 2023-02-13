@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>method function</title>
+</head>
+<body>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">stop</button>
+
+
+
+    <script>
+        // function start(){
+        //     var x = confirm("Are you ready to learn");
+        //     if(x==true){document.write("well done, start to learn!")};
+        //     if(x==false){document.write("It's ok")};
+        // }
+
+        var myVar;
+        function start(){
+            myVar = setTimeout(
+                function(){prompt("enter your name","")}, 2000
+            );
+        }
+        function stop(){
+            clearTimeout(myVar);
+        }
+    </script>
+</body>
+</html>
