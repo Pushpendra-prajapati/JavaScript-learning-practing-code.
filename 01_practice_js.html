@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice JS</title>
+    <style>
+       #main {
+        border:1px solid lightcoral;
+        padding:5px;
+        display:inline-block;
+        
+       } 
+    </style> 
+    
+</head>
+<body>
+    <div id="main" onmouseenter="modify()" onmouseleave="unmodify()">
+        <h1>Pushpendra Prajapati</h1>
+    </div>
+
+    <script>
+        function modify(){
+            document.getElementById('main').style.display = "block";
+            document.getElementById('main').style.textAlign = "center";
+            document.getElementById('main').style.border = "1px solid cyan";
+        }
+        function unmodify(){
+            document.getElementById('main').style.display = "inline-block";
+        }
+    </script>
+</body>
+</html>

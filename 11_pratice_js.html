@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        let p = document.createElement("p");
+        let text = document.createTextNode("This my first paragraph");
+        p.appendChild(text);
+        let div = document.getElementById("demo");
+        div.appendChild(p);
+
+    </script>
+</body>
+</html>

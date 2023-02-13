@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        <p id="p1">This is a paragraph</p>
+        <p id="p2">This is another paragraph</p>
+    </div>
+
+    <script>
+        //let parent = document.getElementById("demo");
+        //let child = document.getElementById("p2");     //remove p2
+        //let child = document.getElementById("p1");     //remove p1
+        // parent.removeChild(child);
+
+        //another way
+        let child_1 = document.getElementById("p2");
+        child_1.parentNode.removeChild(child_1);
+    </script>
+</body>
+</html>
