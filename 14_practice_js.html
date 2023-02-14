@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>page title</title>
+    </head>
+    <body>
+        <button id="demo">Click me</button>
+
+        <script>
+            window.onload = function() {
+                let btn = document.getElementById("demo");
+                btn.onclick = function(){
+                    document.body.innerHTML = new Date();
+                }
+            };
+        </script>
+    </body>
+</html>
